@@ -8,6 +8,7 @@
     column-gap: 33px;
 }
 
+
 /* Categorias */
 
 .categorias__lista {
@@ -15,6 +16,7 @@
     flex-direction: column;
     row-gap: .5rem;
 }
+
 
 /* Destaques */
 
@@ -27,6 +29,7 @@
 .destaques__barra {
     flex-grow: 1;
 }
+
 
 /* Eventos */
 
@@ -43,6 +46,7 @@
     max-width: 400px;
 }
 
+
 /*Agenda ATIVIDADE PARA SABER MAIS */
 
 .agenda__lista {
@@ -57,7 +61,8 @@
     flex-grow: 1;
 }
 
-/* Rodapé */ 
+
+/* Rodapé */
 
 .rodape {
     display: flex;
@@ -70,63 +75,47 @@
 }
 
 @media (min-width: 720px) {
-
     /* Cabeçalho */
-
     .menu {
         column-gap: 75px;
     }
-
     /* Categorias */
-
     .categorias__lista {
         flex-wrap: wrap;
         column-gap: 1.5rem;
         row-gap: 1rem;
     }
-
     /* Eventos */
-
     .eventos__lista {
         justify-content: end;
     }
-
     /*Agenda ATIVIDADE PARA SABER MAIS */
-
     .agenda__lista {
         justify-content: end;
-
     }
-
 }
 
 @media (min-width: 1440px) {
-
     /* Cabeçalho */
-
     .menu {
         column-gap: 105px;
         flex-wrap: nowrap;
+        /* retira a quebra de linha */
     }
-
     .menu__item:nth-child(1) {
         order: 1;
     }
-
     .menu__item:nth-child(2) {
         order: 3;
     }
-
     .menu__item:nth-child(3) {
         order: 4;
     }
-
     .menu__item:nth-child(4) {
         order: 5;
     }
-
     .menu__item:nth-child(5) {
         order: 2;
     }
-
+    /* nth-child = pseudo classe que permite aplicar estilos apenas para o elemento com a classe menu__item */
 }
